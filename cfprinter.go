@@ -25,20 +25,7 @@ func init() {
 	M = "\033[1;35m%s\033[0m"
 	T = "\033[1;36m%s\033[0m"
 	W = "\033[1;37m%s\033[0m"
-}
-
-func Init(colors string) {
-
-}
-
-// var R, G, B, Y, P, M, D string
-
-func Color(colorString string) func(...interface{}) string {
-	sprint := func(args ...interface{}) string {
-		return fmt.Sprintf(colorString,
-			fmt.Sprint(args...))
-	}
-	return sprint
+	fmt.Println("Cfprinter initialized")
 }
 
 type ToPrint struct {
