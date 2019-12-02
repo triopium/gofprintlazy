@@ -54,6 +54,7 @@ func DeclareColors16() {
 	Y = "\033[1;33m%s\033[0m"
 	P = "\033[1;34m%s\033[0m"
 	M = "\033[1;35m%s\033[0m"
+	D = "Changed"
 }
 
 func Fma(a ...interface{}) error {
