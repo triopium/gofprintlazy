@@ -63,7 +63,7 @@ func DeclareColors16() {
 	D = "fuck"
 }
 
-func fma(a ...interface{}) error {
+func Fma(a ...interface{}) error {
 	// DeclareColors16()
 	fmt.Println(a)
 	/*

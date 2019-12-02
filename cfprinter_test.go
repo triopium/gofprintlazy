@@ -137,6 +137,6 @@ func TestFma(t *testing.T) {
 	// err := fma("% %s", "\033[1;30m%s\033[0m")
 	// err := fma("% %s", "\x1b[38;2;255;0;0m%s\x1b[0m", "10")
 	// err := fma("% %s", D, "10")
-	err := fma(D)
+	err := Fma(D)
 	fmt.Println(err)
 }
