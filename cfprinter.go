@@ -13,7 +13,7 @@ const (
 )
 
 var (
-	B, R, G, Y, P, M, T, W string
+	B, R, G, Y, P, M, T, W, D string
 )
 
 func init() {
@@ -25,6 +25,7 @@ func init() {
 	M = "\033[1;35m%s\033[0m"
 	T = "\033[1;36m%s\033[0m"
 	W = "\033[1;37m%s\033[0m"
+	D = "Default"
 	fmt.Println("Cfprinter initialized")
 }
 
