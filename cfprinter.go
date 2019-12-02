@@ -13,6 +13,10 @@ const (
 )
 
 var (
+	B, R, G, Y, P, M, T, W string
+)
+
+func init() {
 	B = "\033[1;30m%s\033[0m"
 	R = "\033[1;31m%s\033[0m"
 	G = "\033[1;32m%s\033[0m"
@@ -21,12 +25,10 @@ var (
 	M = "\033[1;35m%s\033[0m"
 	T = "\033[1;36m%s\033[0m"
 	W = "\033[1;37m%s\033[0m"
-)
+}
 
 func Init(colors string) {
-	if colors == "normal" {
-		B = "hello"
-	}
+
 }
 
 // var R, G, B, Y, P, M, D string
