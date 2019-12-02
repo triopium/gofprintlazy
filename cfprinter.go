@@ -14,6 +14,7 @@ const (
 
 var (
 	B, R, G, Y, P, M, T, W, D string
+	BURG                      string = "MIKOJ"
 )
 
 func init() {
