@@ -12,7 +12,6 @@ const (
 	DebugColor   = "\033[0;36m%s\033[0m"
 )
 
-/*
 var (
 	B = "\033[1;30m%s\033[0m"
 	R = "\033[1;31m%s\033[0m"
@@ -23,9 +22,14 @@ var (
 	T = "\033[1;36m%s\033[0m"
 	W = "\033[1;37m%s\033[0m"
 )
-*/
 
-var R, G, B, Y, P, M, D string
+func Init(colors string) {
+	if colors == "normal" {
+		B = "hello"
+	}
+}
+
+// var R, G, B, Y, P, M, D string
 
 func Color(colorString string) func(...interface{}) string {
 	sprint := func(args ...interface{}) string {
@@ -60,7 +64,6 @@ func DeclareColors16() {
 	Y = "\033[1;33m%s\033[0m"
 	P = "\033[1;34m%s\033[0m"
 	M = "\033[1;35m%s\033[0m"
-	D = "fuck"
 }
 
 func Fma(a ...interface{}) error {
